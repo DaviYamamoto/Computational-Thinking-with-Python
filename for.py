@@ -77,3 +77,20 @@ for i in range(alu):
     print(f"A média do {i+1}° aluno é {media}")
     soma = 0
 '''
+#Acerte o Número aleatório
+import random
+a = random.randint(1, 100)
+soma = 0
+while True:
+    tent = int(input("Qual número você acha que foi sorteado? "))
+    if tent < a:
+        print(f"O número sorteado é maior do que {tent}")
+        soma += 1
+        continue
+    elif tent > a:
+        print(f"O número sorteado é menor do que {tent}")
+        soma += 1
+        continue
+    else:
+        print(f"Parábens! Você acertou em {soma+1} tentativas")
+        break
