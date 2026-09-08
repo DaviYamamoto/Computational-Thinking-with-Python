@@ -210,7 +210,7 @@ def executar_analise_densidade() -> None:
         print("--- Encerrando o cálculo da densidade ---")
 
 #Main
-while True:
+while True: #só para executar várias vezes na demonstração
     executar_analise_densidade()
     print("\n")
 
